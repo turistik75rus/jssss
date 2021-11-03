@@ -1,0 +1,129 @@
+@import url('https://fonts.google.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    scroll-behavior: smooth;
+    
+}
+
+header div.uk-card {
+    padding: 0% 3% 0 3%;
+    border-radius: 25px;
+    width: 60%;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3,
+header p, 
+header a {
+    color: #010e3a;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+
+
+}
+
+header ul li a {
+    text-decoration: none !important;
+    padding: 15px 30px;
+    color: #010e3a;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #3d6b68;
+    color: #ffffff;
+}
+
+header {
+    width: 100% !important;
+    background: linear-gradient(#ebad3c, #ebad3c, #ebad3c, #ffffff);
+    padding: 5% 0 5% 0;
+}
+
+header div.uk-card-header {
+    border-bottom: 1.5px solid #253f3e !important;
+}
+
+header div.uk-card-body {
+    /* border-bottom: 1.5px solid #253f3e !important; */
+    border-bottom:none;
+}
+
+hr {
+    border: 0;
+    height: 0.5px;
+    background: #253f3e;
+}
+
+div.uk-card-body.pop {
+    border-bottom: none !important;
+    /* border-bottom: 1px solid #253f3e !important; */
+}
+
+a#btn{
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: #ffffff;
+    background: #3d6b68;
+    font-size: 1em;
+
+}
+
+h3.mainh3{
+    font-size: 50px !important;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+header p.mainp{
+    font-size: 35px !important;
+    font-weight: 100;
+    font-style: Italik;
+    border-bottom: 1.5px solid #253f3e !important;
+}
+
+
+
+
+div.second-card,
+div.second-card h3,
+div.second-card p
+{
+    background: #e1725d;
+    color: #ffffff !important;
+    border-radius: 30px;
+    margin: 0 3% 0 3%;
+}
+
+div.therd-card,
+div.therd-card h3,
+div.therd-card p{
+    color: #ffffff !important;
+    background: #f5b400;
+    border-radius: 30px;
+    margin: 0 3% 0 3%;
+}
+
+div.second{
+    padding-bottom: 20%;
+    padding-top: 3%;
+}
+div.therd{
+    padding-bottom: 20%;
+}
+
+
+
