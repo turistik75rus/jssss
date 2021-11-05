@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="console"></div>
+
+<div class="block">Content</div>
+<div class="block">Content</div>
+<div class="block">Content</div>
+
+<div class="active">Active</div>
+
+<div class="block">Content</div>
+<div class="block">Content</div>
+<div class="block">Content</div>
+<style type="text/css">
+    #console {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 300px;
+        margin-left: -150px;
+        text-align: center;
+        background: #666;
+        padding: 10px;
+        opacity: 0.5;
+        color: #fff;
+    }
+    .block {
+        margin-bottom: 15px;
+        background-image: linear-gradient(135deg, #ececec, #bfbbbb);
+        padding: 100px 0;
+        font-size: 44px;
+        color: #555;
+        text-align: center;
+    }
+    .active {
+        margin-bottom: 15px;
+        background-image: linear-gradient(135deg, #ffaede, #ff9797);
+        padding: 100px 0;
+        font-size: 44px;
+        color: #fff;
+        text-align: center;
+    }
+</style>
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    var block_show = null;
+
+    function scrollTracking(){
+        var wt = $(window).scrollTop();
+        var wh = $(window).height();
+        var et = $('.active').offset().top;
+        var eh = $('.active').outerHeight();
+
+        if (et >= wt && et + eh <= wh + wt){
+            if (block_show == null || block_show == false) {
+                $('#console').html('Блок active полностью виден');
+            }
+            block_show = true;
+        } else {
+            if (block_show == null || block_show == true) {
+                $('#console').html('');
+            }
+            block_show = false;
+        }
+    }
+
+    $(window).scroll(function(){
+        scrollTracking();
+    });
+
+    $(document).ready(function(){
+        scrollTracking();
+    });
+</script>
+
+</body>
+</html>
